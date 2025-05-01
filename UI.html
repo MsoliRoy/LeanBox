@@ -1,0 +1,27 @@
+/* LeanBox UI - Dark Mode Tauri App */
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeanBox</title>
+  <script defer src="/main.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <div class="min-h-screen flex flex-col items-center justify-center p-4">
+    <h1 class="text-4xl font-bold mb-6">LeanBox</h1>
+    <p class="mb-8 text-gray-400">Optimize your Ubuntu for performance by disabling unnecessary services.</p>
+
+    <div id="service-list" class="w-full max-w-md space-y-4">
+      <!-- Service toggles will be injected here -->
+    </div>
+
+    <button onclick="applyChanges()"
+            class="mt-8 px-6 py-2 bg-green-600 hover:bg-green-700 rounded shadow text-white">
+      Apply Changes
+    </button>
+  </div>
+</body>
+</html>
